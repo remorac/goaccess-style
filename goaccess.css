@@ -1,0 +1,55 @@
+@import url("fonts/fellix/stylesheet.css");
+
+body {
+	font-family: Fellix, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .gheader {
+	letter-spacing: 0;
+	font-weight: 600;
+	text-transform: none;
+}
+.h-dashboard {
+	font-weight: 700;
+	text-transform: none;
+}
+.grid-module, .wrap-panel, .wrap-panels {
+	margin-bottom: 15px;
+}
+.page-header {
+	padding: 0;
+}
+h4 span.label-info {
+	background-color: transparent;
+	box-shadow: none;
+	color: #ccc;
+	font-weight: 500;
+	text-shadow: 1px 1px 0px #fff;
+	padding: 0;
+}
+.grid-module h3 {
+	text-align: right;
+}
+.panel-header h4.gheader {
+	margin-top: 10px;
+}
+.panel-plot-wrap {
+	top: 10px;
+}
+.grid-module, .wrap-panel > div {
+	border-radius: 4px;
+}
+.dropdown-toggle > .fa-gear {
+	vertical-align: text-top;
+}
+.container-fluid {
+	margin-right: 10px;
+}
+@media (max-width: 992px) {
+	.container-fluid {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.row:before, .row:after {
+		display: none;
+	}
+}
