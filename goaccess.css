@@ -12,6 +12,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .gheader {
 	font-weight: 700;
 	text-transform: none;
 }
+.page-header {
+	border-bottom: 2px solid #ddd;
+}
 .page-header h4 {
 	margin: 0;
 	margin-top: 20px;
