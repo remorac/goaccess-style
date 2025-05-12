@@ -1,23 +1,28 @@
 ['load', 'focus'].forEach(function(event){
         window.addEventListener(event, function() {
+                replaceElements();
+
                 function replaceElements() {
                         document.querySelector('.h-dashboard').querySelector('.hidden-xs').innerHTML = 'NGINX - access.log';
 
-                        const collections = document.querySelectorAll(".dropdown-toggle");
-                        collections.forEach(collection => {
-                                collection.innerHTML = '<i class="fa fa-gear"></i>';
+                        const elements0 = document.querySelectorAll(".dropdown-toggle");
+                        elements0.forEach(element => {
+                                element.innerHTML = '<i class="fa fa-gear"></i>';
                         });
 
-                        const collections1 = document.querySelector("#overall").querySelector("ul").querySelectorAll("li");
-                        collections1.forEach(collection => {
-                                collection.classList.remove("col-sm-6");
-                                collection.classList.add("col-xs-6", "col-sm-3");
+                        const elements1 = document.querySelector("#overall").querySelector("ul").querySelectorAll("li");
+                        elements1.forEach(element => {
+                                element.classList.remove("col-sm-6");
+                                element.classList.add("col-xs-6", "col-sm-4");
+                        });
+
+                        const parents0 = document.querySelectorAll("hgroup");
+                        parents0.forEach(parent => {
+                                const elements2 = parent.querySelectorAll("small");
+                                elements2.forEach(element => {
+                                        element.innerHTML = element.innerHTML.replace("[, ", "[");
+                                });
                         });
                 }
-
-                replaceElements();
-                // setInterval(function() {
-                //         replaceElements();
-                // }, 1000);
         });
 });
