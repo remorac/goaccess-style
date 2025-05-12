@@ -21,6 +21,8 @@
                                 const elements2 = parent.querySelectorAll("small");
                                 elements2.forEach(element => {
                                         element.innerHTML = element.innerHTML.replace("[, ", "[");
+                                        element.innerHTML = element.innerHTML.replace("[", '<span class="hidden-xs">[');
+                                        element.innerHTML = element.innerHTML.replace("]", ']</span>');
                                 });
                         });
                 }
