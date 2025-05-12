@@ -24,7 +24,7 @@ h4 span.label-info {
 	text-shadow: 1px 1px 0px #fff;
 	padding: 0;
 }
-#overall hgroup p {
+#overall hgroup p, hgroup h2, hgroup small {
 	text-transform: none;
 }
 #overall ul {
