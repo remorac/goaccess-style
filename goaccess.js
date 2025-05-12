@@ -7,7 +7,8 @@
 		}, 1000);
 
                 function replaceElements() {
-                        document.querySelector('.h-dashboard').querySelector('.hidden-xs').innerHTML = '<span style="text-shadow: 1px 1px 2px #888">NGINX</span> <small style="font-weight:400; color: #aaa; text-shadow: 1px 1px 0px #fff">access.log</small>';
+                        document.querySelector('.h-dashboard').querySelector('.hidden-xs').innerHTML = '<span class="floating">NGINX</span> <small class="emboss" style="font-weight:400;">access.log</small>';
+			document.querySelector(".nav-minibars").classList.add("floating");
 
                         const elements0 = document.querySelectorAll(".dropdown-toggle");
                         elements0.forEach(element => {
