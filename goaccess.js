@@ -2,19 +2,26 @@
         window.addEventListener(event, function() {
                 replaceElements();
 
+		setInterval(function() {
+			replaceElements();
+		}, 1000);
+
                 function replaceElements() {
-                        document.querySelector('.h-dashboard').querySelector('.hidden-xs').innerHTML = 'NGINX - access.log';
+                        document.querySelector('.h-dashboard').querySelector('.hidden-xs').innerHTML = 'NGINX <small style="font-weight:400">access.log</small>';
 
                         const elements0 = document.querySelectorAll(".dropdown-toggle");
                         elements0.forEach(element => {
                                 element.innerHTML = '<i class="fa fa-gear"></i>';
                         });
 
-                        const elements1 = document.querySelector("#overall").querySelector("ul").querySelectorAll("li");
-                        elements1.forEach(element => {
-                                element.classList.remove("col-sm-6");
-                                element.classList.add("col-xs-6", "col-sm-3");
-                        });
+                        const ul = document.querySelector("#overall").querySelector("ul");
+			if (ul) {
+				elements1 = ul.querySelectorAll("li");
+        	                elements1.forEach(element => {
+                	                element.classList.remove("col-sm-6");
+                        	        element.classList.add("col-xs-6", "col-sm-3");
+                        	});
+			}
 
                         const parents0 = document.querySelectorAll("hgroup");
                         parents0.forEach(parent => {
