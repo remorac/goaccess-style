@@ -129,9 +129,16 @@ article > div {
   100% { opacity:1; }
 }
 
+
+@media (min-width: 576px) { 
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .col-sm-6 {
-    width: 50%;
-    float: left;
+	float: left;
 }
 @media (max-width:575.98px) {
     .col-sm-6 {
@@ -157,12 +164,5 @@ article > div {
     .col-sm-6 {
         padding-left: 10px;
         padding-right: 10px;
-    }
-}
-
-@media (min-width: 576px) { 
-    .container, .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
