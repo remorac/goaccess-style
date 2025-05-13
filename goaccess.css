@@ -87,12 +87,13 @@ article > div {
 }
 .nav-ws-status {
    text-shadow: 0px 0px 4px;
-   -webkit-animation: flickerAnimation 5s infinite;
-   -moz-animation: flickerAnimation 5s infinite;
-   -o-animation: flickerAnimation 5s infinite;
-   animation: flickerAnimation 5s infinite;
-	left: 25px !important;
-	top: 65px !important;
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
+	left: 44px !important;
+	top: auto !important;
+	bottom: 10px;
 }
 .nav-ws-status.mini {
 	left: auto !important;
