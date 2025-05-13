@@ -15,15 +15,6 @@
                                 element.innerHTML = '<i class="fa fa-gear"></i>';
                         });
 
-                        const ul = document.querySelector("#overall").querySelector("ul");
-			if (ul) {
-				elements1 = ul.querySelectorAll("li");
-        	                elements1.forEach(element => {
-                	                element.classList.remove("col-sm-6");
-                        	        element.classList.add("col-xs-6", "col-sm-3");
-                        	});
-			}
-
                         const parents0 = document.querySelectorAll("hgroup");
                         parents0.forEach(parent => {
                                 const elements2 = parent.querySelectorAll("small");
@@ -33,6 +24,15 @@
                                         element.innerHTML = element.innerHTML.replace("]", ']</span>');
                                 });
                         });
+
+                        /* const ul = document.querySelector("#overall").querySelector("ul");
+			if (ul) {
+				elements1 = ul.querySelectorAll("li");
+        	                elements1.forEach(element => {
+                	                #element.classList.remove("col-sm-6");
+                        	        #element.classList.add("col-xs-6", "col-sm-3");
+                        	});
+			} */
                 }
         });
 });
