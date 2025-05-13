@@ -96,7 +96,7 @@ article > div {
 }
 .nav-ws-status.mini {
 	left: auto !important;
-	top: 3px !important;
+	top: 0px !important;
 	right: 0 !important;
 }
 
