@@ -1,0 +1,10 @@
+#nginx
+log_format extended '$host:$remote_addr - $remote_user [$time_local] '
+                    '"$request" $status $body_bytes_sent $request_time '
+                    '"$http_referer" "$http_user_agent"';
+
+#goaccess
+--log-format='%v:%h - %e [%d:%t %^] "%r" %s %b %T "%R" "%u"'
+
+#command
+zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/index.html --real-time-html --daemonize
