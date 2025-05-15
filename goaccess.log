@@ -1,7 +1,0 @@
- [K[PARSING /var/log/nginx/access.log] {0} @ {0/s} [K[PARSING /var/log/nginx/access.log] {3950} @ {0/s} [K[PARSING /var/log/nginx/access.log] {7168} @ {0/s} [K[PARSING /var/log/nginx/access.log] {10240} @ {0/s} [K[PARSING /var/log/nginx/access.log] {13312} @ {0/s} [K[PARSING -] {2665} @ {0/s}
-[2KWebSocket server ready to accept new client connections
-
-SIGINT caught!
-Closing GoAccess...
-Stopping WebSocket server...
-Cleaning up resources...
